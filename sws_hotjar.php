@@ -79,7 +79,7 @@ function sws_hotjar_text_field_0_render(  ) {
 
 function sws_hotjar_settings_section_callback(  ) {
 
-	echo __( 'This section description', 'sws-hotjar' );
+	echo __( 'Add the HotJar SiteID for your newly created site.', 'sws-hotjar' );
 
 }
 
@@ -90,7 +90,7 @@ function sws_hotjar_options_page(  ) {
 	<form action='options.php' method='post'>
 
 		<h2>Hotjar for WordPress</h2>
-
+    <img src="<?php plugin_dir_path( __FILE__ );?>images/hotjar-screenshot.gif" alt="Hotjar Screenshot"/>
 		<?php
 		settings_fields( 'pluginPage' );
 		do_settings_sections( 'pluginPage' );
