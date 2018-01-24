@@ -97,12 +97,12 @@ function sws_hotjar_options_page(  ) {
 		?>
     <h3>Locations of the SiteID within the Hotjar website</h3>
     <p>There are a number of locations where you can find your Hotjar SiteID. We've included screenshots below for a number of them</p>
-    <img src="<?php echo plugins_url( 'images/screenshot-1.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
-    <img src="<?php echo plugins_url( 'images/screenshot-2.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
-    <img src="<?php echo plugins_url( 'images/screenshot-3.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
+    <img src="<?php echo plugins_url( 'images/screenshot-1.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/><br>
+    <img src="<?php echo plugins_url( 'images/screenshot-2.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/><br>
+    <img src="<?php echo plugins_url( 'images/screenshot-3.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/><br>
     <hr>
     <p>You can also click here to locate the tracking code screen if you haven't set it up yet</p>
-    <img src="<?php echo plugins_url( 'images/screenshot-4.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
+    <img src="<?php echo plugins_url( 'images/screenshot-4.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/></br>
 	</form>
 	<?php
 
