@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: HotJar for WordPress
+ * Plugin Name: Hotjar for WordPress
  * Version: 1.1
- * Description: This plugin will install the HotJar script into your website using the provided HotJar Site ID.
+ * Description: This plugin will install the Hotjar script into your website using the provided Hotjar Site ID.
  * Author: Stoute.co
  * Author URI: https://www.stoute.co/
  * Plugin URI: https://www.stoute.co/plugins/hotjar-for-wordpress
@@ -79,7 +79,7 @@ function sws_hotjar_text_field_0_render(  ) {
 
 function sws_hotjar_settings_section_callback(  ) {
 
-	echo __( 'Add the HotJar SiteID for your newly created site.', 'sws-hotjar' );
+	echo __( 'Add the Hotjar SiteID for your newly created site.', 'sws-hotjar' );
 
 }
 
