@@ -90,7 +90,7 @@ function sws_hotjar_options_page(  ) {
 	<form action='options.php' method='post'>
 
 		<h2>Hotjar for WordPress</h2>
-    <img src="<?php plugin_dir_path( __FILE__ );?>images/hotjar-screenshot.gif" alt="Hotjar Screenshot"/>
+    <img src="<?php echo plugins_url( 'images/hotjar-screenshot.gif', __FILE__ )?>" alt="Hotjar Screenshot"/>
 		<?php
 		settings_fields( 'pluginPage' );
 		do_settings_sections( 'pluginPage' );
