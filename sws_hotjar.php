@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Plugin Name: HotJar by Stoute.co
- * Version: 1.0
+ * Plugin Name: HotJar for WordPress
+ * Version: 1.1
  * Description: This plugin will install the HotJar script into your website using the provided HotJar Site ID.
  * Author: Stoute.co
  * Author URI: https://www.stoute.co/
- * Plugin URI: https://www.stoute.co/plugins/hotjar-by-stouteco
+ * Plugin URI: https://www.stoute.co/plugins/hotjar-for-wordpress
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: sws_hotjar
@@ -18,7 +18,7 @@ add_action( 'wp_head', 'sws_hotjar_script' );
 function sws_hotjar_script() {
   $hotJarSiteID = get_option( 'sws_hotjar_settings' );
   ?>
-  <!-- START HotJar by Stoute.co Script -->
+  <!-- START HotJar for WordPress Script -->
   <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -29,7 +29,7 @@ function sws_hotjar_script() {
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <!-- END HotJar by Stoute.co Script -->
+  <!-- END HotJar for WordPress Script -->
   <?
 }
 
@@ -39,7 +39,7 @@ add_action( 'admin_init', 'sws_hotjar_settings_init' );
 
 function sws_hotjar_add_admin_menu(  ) {
 
-	add_submenu_page( 'tools.php', 'Hotjar by Stoute.co', 'Hotjar by Stoute.co', 'manage_options', 'hotjar_by_stoute.co', 'sws_hotjar_options_page' );
+	add_submenu_page( 'tools.php', 'Hotjar for WordPress', 'Hotjar for WordPress', 'manage_options', 'hotjar_for_wordpress', 'sws_hotjar_options_page' );
 
 }
 
@@ -89,7 +89,7 @@ function sws_hotjar_options_page(  ) {
 	?>
 	<form action='options.php' method='post'>
 
-		<h2>Hotjar by Stoute.co</h2>
+		<h2>Hotjar for WordPress</h2>
 
 		<?php
 		settings_fields( 'pluginPage' );
