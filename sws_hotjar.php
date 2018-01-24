@@ -18,7 +18,7 @@ add_action( 'wp_head', 'sws_hotjar_script' );
 function sws_hotjar_script() {
   $hotJarSiteID = get_option( 'sws_hotjar_settings' );
   ?>
-  <!-- START HotJar for WordPress Script -->
+  <!-- START Hotjar for WordPress Script -->
   <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -29,7 +29,7 @@ function sws_hotjar_script() {
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <!-- END HotJar for WordPress Script -->
+  <!-- END Hotjar for WordPress Script -->
   <?
 }
 
@@ -90,13 +90,19 @@ function sws_hotjar_options_page(  ) {
 	<form action='options.php' method='post'>
 
 		<h2>Hotjar for WordPress</h2>
-    <img src="<?php echo plugins_url( 'images/hotjar-screenshot.gif', __FILE__ )?>" alt="Hotjar Screenshot"/>
 		<?php
-		settings_fields( 'pluginPage' );
 		do_settings_sections( 'pluginPage' );
+		settings_fields( 'pluginPage' );
 		submit_button();
 		?>
-
+    <h3>Locations of the SiteID within the Hotjar website</h3>
+    <p>There are a number of locations where you can find your Hotjar SiteID. We've included screenshots below for a number of them</p>
+    <img src="<?php echo plugins_url( 'images/screenshot-1.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
+    <img src="<?php echo plugins_url( 'images/screenshot-2.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
+    <img src="<?php echo plugins_url( 'images/screenshot-3.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
+    <hr>
+    <p>You can also click here to locate the tracking code screen if you haven't set it up yet</p>
+    <img src="<?php echo plugins_url( 'images/screenshot-4.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/>
 	</form>
 	<?php
 
