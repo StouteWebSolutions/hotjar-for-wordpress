@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Hotjar for WordPress
- * Version: 1.1
+ * Version: 1.1.1
  * Description: This plugin will install the Hotjar script into your website using the provided Hotjar Site ID.
  * Author: Stoute.co
  * Author URI: https://www.stoute.co/
