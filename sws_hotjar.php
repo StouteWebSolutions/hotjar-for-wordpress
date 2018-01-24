@@ -50,7 +50,7 @@ function sws_hotjar_settings_init(  ) {
 
 	add_settings_section(
 		'sws_hotjar_pluginPage_section',
-		__( 'Add your HotJar Site ID', 'sws-hotjar' ),
+		__( 'Add your Hotjar Site ID', 'sws-hotjar' ),
 		'sws_hotjar_settings_section_callback',
 		'pluginPage'
 	);
