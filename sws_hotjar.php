@@ -101,8 +101,9 @@ function sws_hotjar_options_page(  ) {
     <img src="<?php echo plugins_url( 'images/screenshot-2.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/><br>
     <img src="<?php echo plugins_url( 'images/screenshot-3.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/><br>
     <hr>
-    <p>You can also click here to locate the tracking code screen if you haven't set it up yet</p>
+    <p>You can also click on these buttons to locate the tracking code screen in the upper right hand corner of the Hotjar page.</p>
     <img src="<?php echo plugins_url( 'images/screenshot-4.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/></br>
+    <img src="<?php echo plugins_url( 'images/screenshot-5.png', __FILE__ ); ?>" alt="Hotjar Screenshot" width="500px"/></br>
 	</form>
 	<?php
 
