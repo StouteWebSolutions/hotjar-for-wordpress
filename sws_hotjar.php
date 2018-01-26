@@ -22,7 +22,7 @@ function sws_hotjar_script() {
 
   if( array_intersect( $allowed_roles, $user->roles ) ) {  ?>
   <!-- Hotjar for WordPress is installed.-->
-  <!-- Your Site ID is: <?php echo $hotJarSiteID['sws_hotjar_text_field_0']; ?>.-->
+  <!-- Your Site ID is: <?php if ($hotJarSiteID['sws_hotjar_text_field_0'] != '') { echo $hotJarSiteID['sws_hotjar_text_field_0'];} else { echo 'MISSING. Please add your hotjar SiteID in the settings page. (Tools > Hotjar for WordPress)';} ?>-->
   <!-- You are logged in as an Admin, Editor, or Author so the script will not be displayed until you logout.-->
   <!-- Thanks for using our plugin! -The Stoute.co Team (https://www.stoute.co/)-->
   <!-- END Hotjar for WordPress -->
