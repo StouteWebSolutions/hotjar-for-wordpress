@@ -19,10 +19,15 @@ function sws_hotjar_script() {
   $hotJarSiteID = get_option( 'sws_hotjar_settings' );
   $user = wp_get_current_user();
   $allowed_roles = array('editor', 'administrator', 'author');
-<?php if( array_intersect($allowed_roles, $user->roles ) ) {  ?>
-  <!-- Hotjar for WordPress is installed. Your Site ID is: <?php echo $hotJarSiteID['sws_hotjar_text_field_0']; ?>, but you are logged in as an Admin, Editor, or Author so the script will not be displayed until you logout. Thanks for using our plugin! -The Stoute.co Team -->
+
+  if( array_intersect( $allowed_roles, $user->roles ) ) {  ?>
+  <!-- Hotjar for WordPress is installed.-->
+  <!-- Your Site ID is: <?php echo $hotJarSiteID['sws_hotjar_text_field_0']; ?>.-->
+  <!-- You are logged in as an Admin, Editor, or Author so the script will not be displayed until you logout.-->
+  <!-- Thanks for using our plugin! -The Stoute.co Team (https://www.stoute.co/)-->
+  <!-- END Hotjar for WordPress -->
 <?php } else { ?>
-  <!-- START Hotjar for WordPress Script -->
+  <!-- START Hotjar for WordPress -->
   <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -33,8 +38,9 @@ function sws_hotjar_script() {
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <!-- END Hotjar for WordPress Script -->
+  <!-- END Hotjar for WordPress -->
   <?
+  }
 }
 
 add_action( 'admin_menu', 'sws_hotjar_add_admin_menu' );
@@ -112,6 +118,3 @@ function sws_hotjar_options_page(  ) {
 	<?php
 
 }
-
-
- ?>
