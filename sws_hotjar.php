@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Hotjar for WordPress
- * Version: 1.1.1
+ * Version: 1.2.0
  * Description: This plugin will install the Hotjar script into your website using the provided Hotjar Site ID.
  * Author: Stoute.co
  * Author URI: https://www.stoute.co/
@@ -17,7 +17,11 @@ add_action( 'wp_head', 'sws_hotjar_script' );
 
 function sws_hotjar_script() {
   $hotJarSiteID = get_option( 'sws_hotjar_settings' );
-  ?>
+  $user = wp_get_current_user();
+  $allowed_roles = array('editor', 'administrator', 'author');
+<?php if( array_intersect($allowed_roles, $user->roles ) ) {  ?>
+  <!-- Hotjar for WordPress is installed. Your Site ID is: <?php echo $hotJarSiteID['sws_hotjar_text_field_0']; ?>, but you are logged in as an Admin, Editor, or Author so the script will not be displayed until you logout. Thanks for using our plugin! -The Stoute.co Team -->
+<?php } else { ?>
   <!-- START Hotjar for WordPress Script -->
   <script>
       (function(h,o,t,j,a,r){

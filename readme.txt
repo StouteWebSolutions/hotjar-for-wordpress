@@ -3,7 +3,7 @@ Contributors: stoute
 Tags: hotjar, heatmap, analytics, marketing, funnel
 Requires at least: 4.6
 Tested up to: 4.9.2
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,3 +47,11 @@ No, this plugin has been developed by Paul Stoute of [Stoute.co](https://stoute.
 = Open Source? =
 
 This plugin is open source and free to anyone who would like to use it on their site. You can even contribute to the development of the plugin through our github repo here: [https://github.com/StouteWebSolutions/hotjar-for-wordpress](https://github.com/StouteWebSolutions/hotjar-for-wordpress "Github Repo")
+
+== Changelog ==
+
+= 1.2.0 =
+* Added the ability to hide the script for Admin, editor, and author user roles (when logged in). If you're logged in it will just add a html comment to let you know that the plugin is installed, working, and what the provided siteID is.
+
+= 1.1.1 =
+* Initial publicly available version
